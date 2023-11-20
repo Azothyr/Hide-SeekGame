@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.1f1 (f18e0c1b5784) revision 15830540'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 32679 MB
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32679 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ C:/GitRepos/Hide-SeekGame/Game/HideSeekProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54142
+63851
 Successfully changed project path to: C:/GitRepos/Hide-SeekGame/Game/HideSeekProject
 C:/GitRepos/Hide-SeekGame/Game/HideSeekProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/GitRepos/Hide-SeekGame/Game/HideSeekProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25952] Host "[IP] 192.168.1.246 [Port] 0 [Flags] 2 [Guid] 2526418339 [EditorId] 2526418339 [Version] 1048832 [Id] WindowsEditor(7,DemonsArmory) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16824] Host "[IP] 192.168.1.246 [Port] 0 [Flags] 2 [Guid] 3903694012 [EditorId] 3903694012 [Version] 1048832 [Id] WindowsEditor(7,DemonsArmory) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [25952] Host "[IP] 192.168.1.246 [Port] 0 [Flags] 2 [Guid] 2526418339 [EditorId] 2526418339 [Version] 1048832 [Id] WindowsEditor(7,DemonsArmory) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16824] Host "[IP] 192.168.1.246 [Port] 0 [Flags] 2 [Guid] 3903694012 [EditorId] 3903694012 [Version] 1048832 [Id] WindowsEditor(7,DemonsArmory) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 16.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 23.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.1f1 (f18e0c1b5784)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -69,49 +69,61 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.007841 seconds.
-- Loaded All Assemblies, in  0.273 seconds
+Registered in 0.008286 seconds.
+- Loaded All Assemblies, in  0.277 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 229 ms
+Multiple ADB server instances found, the following ADB server instance have been terminated due to being run from another SDK. Process paths: 
+C:\Program Files\Unity\Hub\Editor\2021.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler)
+UnityEditor.Android.TargetScanWorker:ScanSync ()
+UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[])
+UnityEditor.Android.TargetExtension:OnLoad ()
+UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
+
+Android Extension - Scanning For ADB Devices 2329 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.492 seconds
-Domain Reload Profiling: 762ms
-	BeginReloadAssembly (73ms)
+- Finished resetting the current domain, in  2.595 seconds
+Domain Reload Profiling: 2870ms
+	BeginReloadAssembly (75ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (25ms)
+	RebuildCommonClasses (26ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (116ms)
-		LoadAssemblies (70ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (115ms)
+		LoadAssemblies (73ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (109ms)
-			TypeCache.Refresh (108ms)
+		AnalyzeDomain (106ms)
+			TypeCache.Refresh (106ms)
 				TypeCache.ScanAssembly (97ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (492ms)
+	FinalizeReload (2595ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (446ms)
+		SetupLoadedEditorAssemblies (2549ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (323ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (2425ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (82ms)
-			ProcessInitializeOnLoadMethodAttributes (35ms)
+			ProcessInitializeOnLoadAttributes (77ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -122,53 +134,53 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\GitRepos\Hide-SeekGame\Game\HideSeekProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\GitRepos\Hide-SeekGame\Game\HideSeekProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.801 seconds
-Refreshing native plugins compatible for Editor in 7.06 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.733 seconds
+Refreshing native plugins compatible for Editor in 6.45 ms, found 3 plugins.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.582 seconds
-Domain Reload Profiling: 1376ms
-	BeginReloadAssembly (109ms)
+- Finished resetting the current domain, in  0.541 seconds
+Domain Reload Profiling: 1270ms
+	BeginReloadAssembly (98ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (61ms)
-	LoadAllAssembliesAndSetupDomain (593ms)
-		LoadAssemblies (346ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (546ms)
+		LoadAssemblies (311ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (287ms)
-			TypeCache.Refresh (253ms)
-				TypeCache.ScanAssembly (239ms)
-			ScanForSourceGeneratedMonoScriptInfo (30ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (582ms)
+		AnalyzeDomain (274ms)
+			TypeCache.Refresh (246ms)
+				TypeCache.ScanAssembly (231ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (542ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (436ms)
+		SetupLoadedEditorAssemblies (406ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
+			InitializePlatformSupportModulesInManaged (19ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (112ms)
-			ProcessInitializeOnLoadAttributes (265ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
+			BeforeProcessingInitializeOnLoad (106ms)
+			ProcessInitializeOnLoadAttributes (243ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 7.17 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 7.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5379 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 96 unused Assets / (2.6 MB). Loaded Objects now: 5837.
-Memory consumption went from 203.0 MB to 200.4 MB.
-Total: 4.273900 ms (FindLiveObjects: 0.481800 ms CreateObjectMapping: 0.200100 ms MarkObjects: 2.813400 ms  DeleteObjects: 0.777900 ms)
+Memory consumption went from 203.0 MB to 200.5 MB.
+Total: 4.190000 ms (FindLiveObjects: 0.360800 ms CreateObjectMapping: 0.248900 ms MarkObjects: 2.775500 ms  DeleteObjects: 0.804000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,147 +193,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 107098.641729 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator1 1/Meshes
-  artifactKey: Guid(f56b7b8c491da184ca39a53fb9ade317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator1 1/Meshes using Guid(f56b7b8c491da184ca39a53fb9ade317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db572d3619390a4d20acc63b67ff30a') in 0.001837 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.897004 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator1 1/Meshes/zp_evergreen_tree_creator__1.0_meshes.asset
-  artifactKey: Guid(d4d8e397f9e81a74b97eb9e560788523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator1 1/Meshes/zp_evergreen_tree_creator__1.0_meshes.asset using Guid(d4d8e397f9e81a74b97eb9e560788523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9071e916af41d28c098421bc6ff953b1') in 0.071771 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 179.161462 seconds.
-  path: Assets/Prefabs/Environment/Trees/zp_evergreen_tree_creator1 1/Materials
-  artifactKey: Guid(f796da7585f47ff49a853c67ba9b1ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Environment/Trees/zp_evergreen_tree_creator1 1/Materials using Guid(f796da7585f47ff49a853c67ba9b1ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e012a140672a1303c6ec004368603c8') in 0.000502 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 195.847267 seconds.
-  path: Assets/Prefabs/Environment/Trees/zp_evergreen_tree_creator1 1/zp_evergreen_tree_creator1.prefab
-  artifactKey: Guid(5a1c1fe77f290d741b2c704d499bea37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Environment/Trees/zp_evergreen_tree_creator1 1/zp_evergreen_tree_creator1.prefab using Guid(5a1c1fe77f290d741b2c704d499bea37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4498492ccb17cb824274b92db6610d68') in 0.030672 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 2936.351526 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2/zp_evergreen_tree_creator2.prefab
-  artifactKey: Guid(d681e965f909b764fbbdd7cbf681b395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2/zp_evergreen_tree_creator2.prefab using Guid(d681e965f909b764fbbdd7cbf681b395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b133fe646d76eee27cadd153f30873c9') in 0.054694 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 25.129107 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2/Tree_001.prefab
-  artifactKey: Guid(d681e965f909b764fbbdd7cbf681b395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2/Tree_001.prefab using Guid(d681e965f909b764fbbdd7cbf681b395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98fb3f52f3abb0b4055d2327411a4260') in 0.032230 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 1251.717128 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 1/zp_evergreen_tree_creator2.prefab
-  artifactKey: Guid(e3f5470ba85384644bf48d34f86ade19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 1/zp_evergreen_tree_creator2.prefab using Guid(e3f5470ba85384644bf48d34f86ade19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd763c22840d2cf2c2620a3959b679907') in 0.043992 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 15.239742 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 1/Tree_002.prefab
-  artifactKey: Guid(e3f5470ba85384644bf48d34f86ade19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 1/Tree_002.prefab using Guid(e3f5470ba85384644bf48d34f86ade19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359b90564b3cdc0cf29f9d87e88c2d88') in 0.025898 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 96.811294 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 2/zp_evergreen_tree_creator2.prefab
-  artifactKey: Guid(d3c7a8ed92b63e74d8f3efc30bcd3ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 2/zp_evergreen_tree_creator2.prefab using Guid(d3c7a8ed92b63e74d8f3efc30bcd3ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e103b146662a9e544f1fe6e5097fe16') in 0.020734 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 15.519824 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 2/Tree_003.prefab
-  artifactKey: Guid(d3c7a8ed92b63e74d8f3efc30bcd3ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 2/Tree_003.prefab using Guid(d3c7a8ed92b63e74d8f3efc30bcd3ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde7cda17b7d4a7825006a09e45532ef') in 0.016095 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 256.563158 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 3/zp_evergreen_tree_creator2.prefab
-  artifactKey: Guid(452d9abebc148454aa3a9220f2cd22fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 3/zp_evergreen_tree_creator2.prefab using Guid(452d9abebc148454aa3a9220f2cd22fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ec0834944651ad1d7ad601a26a5211') in 0.048255 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 9.045171 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 3/Tree_004.prefab
-  artifactKey: Guid(452d9abebc148454aa3a9220f2cd22fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 3/Tree_004.prefab using Guid(452d9abebc148454aa3a9220f2cd22fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e89af96fb60e2e9836c952a3b492d4') in 0.063951 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 37.399766 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 4/zp_evergreen_tree_creator2.prefab
-  artifactKey: Guid(46ff5340f1eabd74985cc5db59a41326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 4/zp_evergreen_tree_creator2.prefab using Guid(46ff5340f1eabd74985cc5db59a41326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd085d2fe8f4becf8d2691f0db3f5a51') in 0.043680 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 6.539348 seconds.
-  path: Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 4/Tree_005.prefab
-  artifactKey: Guid(46ff5340f1eabd74985cc5db59a41326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Baked/zp_evergreen_tree_creator2 4/Tree_005.prefab using Guid(46ff5340f1eabd74985cc5db59a41326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '506780d71e7cf416e4a36204f73b7eb6') in 0.039242 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 2523.019044 seconds.
-  path: Assets/HoudiniEngineAssetCache/Working/height_field_terrain/height_field_terrain1/output0/Terrain/Tile0/rock.terrainlayer
-  artifactKey: Guid(2726b2d72ddc6dc4f8c00c8ca396773f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Working/height_field_terrain/height_field_terrain1/output0/Terrain/Tile0/rock.terrainlayer using Guid(2726b2d72ddc6dc4f8c00c8ca396773f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9768a0d5cb2543041755af0a2b3267b') in 0.069862 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.427594 seconds.
-  path: Assets/HoudiniEngineAssetCache/Working/height_field_terrain/height_field_terrain1/output0/Terrain/Tile0/grass.terrainlayer
-  artifactKey: Guid(b10b1aa9bae2c324db05b267c4bd9895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Working/height_field_terrain/height_field_terrain1/output0/Terrain/Tile0/grass.terrainlayer using Guid(b10b1aa9bae2c324db05b267c4bd9895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59cb4f92b10f748ef93fa4c8315bd92b') in 0.011130 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.513885 seconds.
-  path: Assets/HoudiniEngineAssetCache/Working/height_field_terrain/height_field_terrain1/output0/Terrain/Tile0/dirt.terrainlayer
-  artifactKey: Guid(9c457be7b36ed564b9263a1dd623f592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Working/height_field_terrain/height_field_terrain1/output0/Terrain/Tile0/dirt.terrainlayer using Guid(9c457be7b36ed564b9263a1dd623f592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113da2fc1fdbe5b0b14c19bab745eb7a') in 0.013119 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.935136 seconds.
-  path: Assets/HoudiniEngineAssetCache/Working/height_field_terrain/height_field_terrain1/output0/Terrain/Tile0/debris.terrainlayer
-  artifactKey: Guid(b4c006c41b7b91646b4c2a42f1f0f630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HoudiniEngineAssetCache/Working/height_field_terrain/height_field_terrain1/output0/Terrain/Tile0/debris.terrainlayer using Guid(b4c006c41b7b91646b4c2a42f1f0f630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f88a2f6f4fc27530274d190f5516bf6') in 0.012945 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2

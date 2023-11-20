@@ -3,8 +3,8 @@
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
-Assets/AssetStoreTools*
-Assets/Plugin*
+Game/HideSeekProjectAssets/AssetStoreTools/*
+Game/HideSeekProjectAssets/Plugin/*
 
 # Visual Studio cache directory
 .vs/
@@ -40,4 +40,8 @@ sysinfo.txt
 
 *.idea
 
-*
+# Houdini HDA's and bin files
+*.hdanc
+*.hda
+*.hipnc
+*.hip
