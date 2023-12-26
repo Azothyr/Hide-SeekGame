@@ -3,8 +3,10 @@
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
-Game/HideSeekProjectAssets/AssetStoreTools/*
-Game/HideSeekProjectAssets/Plugin/*
+Game/HideSeekProject/Assets/Plugin/*
+Game/HideSeekProject/Assets/AssetStoreTools/*
+Game/HideSeekProject/Assets/TextMesh Pro/Examples & Extras/Textures/*
+Game/HideSeekProject/Assets/TextMesh Pro/Examples & Extras/Sprites/*
 
 # Visual Studio cache directory
 .vs/
