@@ -48,3 +48,5 @@ sysinfo.txt
 *.hda
 *.hipnc
 *.hip
+
+Game/HideSeekProject/Assets/Plugins/HoudiniEngineUnity/
